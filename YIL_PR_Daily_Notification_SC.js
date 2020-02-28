@@ -121,11 +121,11 @@
                     emailBody += "</body>";
                 emailBody += "</html>";
                 
-                //Procurement, Zume Inc 60252
+                //Procurement, Zume Inc 62360
                 log.debug({title: 'Email Send to', details: recipientId});
                 log.debug({title: 'Email Send of PRs', details: emailOfPrs});
                 var emailObj = email.send({
-                    author: 60252,
+                    author: 62360,
                     recipients: recipientId,
                     subject: emailSubject,
                     body: emailBody,

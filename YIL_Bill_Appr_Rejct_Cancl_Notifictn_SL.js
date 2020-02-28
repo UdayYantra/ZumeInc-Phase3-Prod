@@ -851,7 +851,7 @@ define(["N/http", "N/record", "N/ui/serverWidget", "N/render", "N/email", "N/sea
 
     function _pendingApprovalEmailTemplate(vendorBillId, updatedPRId, sendEmailTo, emailNxtLevelAtt, prevApproverTableString) {
 
-        //Procurement, Zume Inc 60252
+        //Procurement, Zume Inc 62360
         //var fileObj = render.transaction({entityId: Number(vendorBillId), printMode: render.PrintMode.PDF, isCustLocale: true});
         
         var billTableString = "";
@@ -927,14 +927,14 @@ define(["N/http", "N/record", "N/ui/serverWidget", "N/render", "N/email", "N/sea
 
             bodyString += "         <br/><br/>";
 
-            bodyString += "         <a href='"+approveURLParam+"'><img src=https://4879077-sb2.app.netsuite.com/core/media/media.nl?id=22152&c=4879077_SB2&h=9b1dfbb416b36a702a24&expurl=T' border='0' alt='Accept' style='width: 60px;'/></a>";
-            bodyString += "         <a href='"+rejectURLParam+"'><img src='https://4879077-sb2.app.netsuite.com/core/media/media.nl?id=22151&c=4879077_SB2&h=65142f106e82b6703fdb&expurl=T' border='0' alt='Reject' style='width: 60px;'/></a>";
+            bodyString += "         <a href='"+approveURLParam+"'><img src=https://4879077.app.netsuite.com/core/media/media.nl?id=26195&c=4879077&h=2f16d2d13e3bc883893b&expurl=T' border='0' alt='Accept' style='width: 60px;'/></a>";
+            bodyString += "         <a href='"+rejectURLParam+"'><img src='https://4879077.app.netsuite.com/core/media/media.nl?id=26194&c=4879077&h=57f894214bdc913b9da1&expurl=T' border='0' alt='Reject' style='width: 60px;'/></a>";
             bodyString += "         <br/><br/>Thank you<br/>Admin";
             bodyString += "     </body>";
             bodyString += " </html>";
             
             var emailObj = email.send({
-                author: 60252,
+                author: 62360,
                 recipients: emailToId,
                 subject: emailSubject,
                 body: bodyString,
@@ -945,7 +945,7 @@ define(["N/http", "N/record", "N/ui/serverWidget", "N/render", "N/email", "N/sea
     }
 
     function _sendRejectionEmail(vendorBillId, requestorId, preparerId, reasonText, prevApproverTableString) {
-        //Procurement, Zume Inc 60252
+        //Procurement, Zume Inc 62360
         //var fileObj = render.transaction({entityId: Number(vendorBillId), printMode: render.PrintMode.PDF, isCustLocale: true});
         var bodyString = "";
         var poTableString = "";
@@ -1017,7 +1017,7 @@ define(["N/http", "N/record", "N/ui/serverWidget", "N/render", "N/email", "N/sea
             bodyString += " </html>";
 
         var emailObj = email.send({
-                author: 60252,
+                author: 62360,
                 recipients: [requestorId, preparerId],
                 subject: emailSubject,
                 body: bodyString,
@@ -1107,7 +1107,7 @@ define(["N/http", "N/record", "N/ui/serverWidget", "N/render", "N/email", "N/sea
         bodyString += " </html>";
 
         var emailObj = email.send({
-                author: 60252,
+                author: 62360,
                 recipients: [requestorId, preparerId],
                 subject: emailSubject,
                 body: bodyString,
@@ -1151,14 +1151,14 @@ define(["N/http", "N/record", "N/ui/serverWidget", "N/render", "N/email", "N/sea
 
             bodyString += "         <br/><br/>";
 
-            bodyString += "         <a href='"+approveURLParam+"'><img src=https://4879077-sb2.app.netsuite.com/core/media/media.nl?id=22152&c=4879077_SB2&h=9b1dfbb416b36a702a24&expurl=T' border='0' alt='Accept' style='width: 60px;'/></a>";
-            bodyString += "         <a href='"+rejectURLParam+"'><img src='https://4879077-sb2.app.netsuite.com/core/media/media.nl?id=22151&c=4879077_SB2&h=65142f106e82b6703fdb&expurl=T' border='0' alt='Reject' style='width: 60px;'/></a>";*/
+            bodyString += "         <a href='"+approveURLParam+"'><img src=https://4879077.app.netsuite.com/core/media/media.nl?id=26195&c=4879077&h=2f16d2d13e3bc883893b&expurl=T' border='0' alt='Accept' style='width: 60px;'/></a>";
+            bodyString += "         <a href='"+rejectURLParam+"'><img src='https://4879077.app.netsuite.com/core/media/media.nl?id=26194&c=4879077&h=57f894214bdc913b9da1&expurl=T' border='0' alt='Reject' style='width: 60px;'/></a>";*/
             bodyString += "         <br/><br/>Thank you<br/>Admin";
             bodyString += "     </body>";
             bodyString += " </html>";
             
             var emailObj = email.send({
-                author: 60252,
+                author: 62360,
                 recipients: emailToId,
                 subject: emailSubject,
                 body: bodyString,
@@ -1199,7 +1199,7 @@ define(["N/http", "N/record", "N/ui/serverWidget", "N/render", "N/email", "N/sea
         bodyString += " </html>";
         
         var emailObj = email.send({
-            author: 60252,
+            author: 62360,
             recipients: emailToId,
             subject: emailSubject,
             body: bodyString,
